@@ -30,7 +30,7 @@ class Vehicle {
     
     desired.limit(speed);
     
-    let steer = p5.Vector.sub(desiredMag, this.vel);
+    let steer = p5.Vector.sub(desired, this.vel);
     steer.limit(speed);
     
     return steer;
