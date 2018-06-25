@@ -22,7 +22,7 @@ class Vehicle {
   arrive(target) {
     let desired = p5.Vector.sub(target, this.pos);
     let desiredMag = desired.mag();
-    let speed = 10;
+    let speed = this.maxSpeed;
     
     if (desiredMag < 200) {
       speed = map(desiredMag, 0, 200, 0, this.maxSpeed);
