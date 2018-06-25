@@ -22,7 +22,7 @@ class Vehicle {
   }
   
   arrive(target) {
-    let desired = createVector(target, this.pos);
+    let desired = p5.Vector.sub(target, this.pos);
     let desiredMag = desired.mag();
     let desiredSpeed = this.maxSpeed;
     if (desiredMag < 200) {
@@ -30,7 +30,7 @@ class Vehicle {
     }
     desired.limit(desiredSpeed);
     
-    let steer = createVector(desired, this.vel);
+    let steer = p5.Vector.sub(desired, this.vel);
     steer.limit(this.maxSpeed);
     
     return steer;
