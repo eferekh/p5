@@ -28,7 +28,7 @@ class Vehicle {
       speed = map(desiredMag, 0, 200, 0, this.maxSpeed);
     }
     
-    desiredMag.limit(speed);
+    desired.limit(speed);
     
     let steer = p5.Vector.sub(desiredMag, this.vel);
     steer.limit(speed);
