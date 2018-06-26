@@ -1,3 +1,8 @@
+/*
+// Author: Elie Ferekh.
+// Content: Steering Behavior, Simulating Arrive And Flee.
+*/
+
 let canvas;
 let vehicle;
 
