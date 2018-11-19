@@ -19,8 +19,6 @@ function draw() {
             balls.push(balls[i].splitLeft());
             balls.push(balls[i].splitRight());
             balls.splice(i, 1);
-        } else {
-            balls[i].bounceBack();
         }
     }
 }
